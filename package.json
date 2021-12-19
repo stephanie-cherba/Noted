@@ -1,26 +1,30 @@
 {
   "name": "noted",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "This project is a fullstack project that allows users to create and access their accounts, which store notes and collections that they have created. The collections could be anything the user wants. Collections display as a book with separate pages, so I created a recipe book.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanie-lane/Noted.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "axios": "^0.18.0",
-    "bcrypt": "^3.0.5",
-    "dotenv": "^7.0.0",
-    "express": "^4.16.4",
-    "express-jwt": "^6.0.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.4.19",
-    "morgan": "^1.9.1"
+  "bugs": {
+    "url": "https://github.com/stephanie-lane/Noted/issues"
   },
-  "engines": {
-    "node": "10.15.0"
+  "homepage": "https://github.com/stephanie-lane/Noted#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-jwt": "^6.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.2",
+    "morgan": "^1.10.0"
   }
 }

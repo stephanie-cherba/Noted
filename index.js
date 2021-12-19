@@ -10,7 +10,7 @@ const path = require('path');
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
-app.use('/api', expressJwt({secret: process.env.SECRET}));
+app.use('/api', expressJwt({secret: process.env.SECRET,  algorithms: ['HS256']}));
 app.use('/api', require('./routes/apiRoutes'));
 app.use('/auth', require('./routes/authRoutes'));
 
